@@ -38,7 +38,7 @@ section {
 	font-family: "Bebas Neue";
 	margin: 0;
 	padding: 0;
-	cursor: not-allowed;
+	cursor: default;
 	color: var(--text-main);
     transition: all 0.3s ease;
 }
@@ -137,6 +137,10 @@ section {
     flex-wrap: wrap;
     row-gap: 3rem;
     justify-content: space-between;
+}
+
+.div2 .photos-grid {
+    margin-top: 3rem;
 }
 
 .photo {
