@@ -162,3 +162,88 @@ section {
 	object-fit: cover;
     border-radius: 1rem;
 }
+
+.section-title {
+    font-family: "DM Serif Text";
+    font-size: 6rem;
+    margin: 0;
+    padding: 0;
+    color: var(--text-main);
+}
+
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.item {
+    width: calc((100% - 8rem) / 3);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.item:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.04);
+}
+
+.item:hover .buy {
+    background-color: var(--secondary-color);
+}
+
+.item img {
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 0;
+    color: var(--text-main);
+}
+
+.price {
+    margin: 0;
+    margin-top: 1rem;
+    color: var(--text-main);
+}
+
+.size {
+    margin: 0;
+    color: var(--text-main);
+}
+
+.availabilty {
+    color: mediumaquamarine;
+    margin: 0;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.btns p {
+    text-align: center;
+    height: 3rem;
+    border-radius: 0.5rem;
+    width: 50%;
+    line-height: 3rem;
+    margin-bottom: 0;
+    transition: all 0.3s ease;
+}
+
+.buy {
+    background-color: var(--accent-color);
+}
+
+.cart {
+    border: 2px solid var(--text-main);
+}
