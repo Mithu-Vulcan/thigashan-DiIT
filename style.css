@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
 	--primary-color: #012622;
@@ -19,6 +19,8 @@ html {
 section {
 	margin: 0;
 	padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .header {
@@ -64,33 +66,58 @@ section {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: repeat(6, 1fr);
-	grid-column-gap: 8px;
-	grid-row-gap: 8px;
-    height: 90vh;
+	grid-column-gap: 1.5rem;
+	grid-row-gap: 1.5rem;
+	height: 90vh;
 }
 
+.bento-div .title {
+	margin: 0;
+	padding-left: 2rem;
+	font-family: "DM Serif Text";
+	font-size: 8rem;
+	color: var(--text-main);
+}
+.div1,
+.div2,
+.div3,
+.div4,
+.div5 {
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
 .div1 {
 	grid-area: 1 / 1 / 7 / 4;
-    background-color: var(--secondary-color);
-    border-radius: 1rem;
 }
+
 .div2 {
-    grid-area: 1 / 4 / 4 / 7;
-    border-radius: 1rem;
-    background-color: var(--secondary-color);
+	grid-area: 1 / 4 / 4 / 7;
+}
+.div2 .title {
+    font-size: 6rem;
 }
 .div3 {
-    background-color: var(--secondary-color);
-    border-radius: 1rem;
 	grid-area: 4 / 4 / 7 / 5;
 }
 .div4 {
-    background-color: var(--secondary-color);
-    border-radius: 1rem;
 	grid-area: 4 / 5 / 7 / 6;
 }
 .div5 {
-    background-color: var(--secondary-color);
-    border-radius: 1rem;
 	grid-area: 4 / 6 / 7 / 7;
+}
+
+.div3 .title,
+.div4 .title,
+.div5 .title {
+	font-size: 4rem;
+}
+
+.div1:hover,
+.div2:hover,
+.div3:hover,
+.div4:hover,
+.div5:hover {
+    transform: scale(1.02);
 }
