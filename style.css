@@ -180,7 +180,7 @@ section {
 }
 
 .item {
-    width: calc((100% - 8rem) / 3);
+    width: calc((100% - 10rem) / 4);
     padding: 0.5rem;
     border-radius: 1rem;
     background-color: var(--secondary-color);
@@ -247,4 +247,11 @@ section {
 
 .cart {
     border: 2px solid var(--text-main);
+}
+
+.footer {
+    color: var(--text-main);
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
 }
